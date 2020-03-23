@@ -21,17 +21,23 @@
   },
   "homepage": "https://github.com/farhd/realworld-frontend-starter-kit#readme",
   "dependencies": {
-    "mithril": "^2.0.4"
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "mithril": "^2.0.4",
+    "router5": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
     "bundlesize": "^0.18.0",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
     "husky": "^4.2.3",
+    "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "sass-loader": "^8.0.2",

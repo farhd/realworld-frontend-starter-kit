@@ -16,10 +16,27 @@ module.exports = {
             use: {
                 loader: 'babel-loader'
             }
-        }]
+        }, {
+            test: /\.(scss)$/,
+            use: [{
+                loader: 'style-loader', // inject CSS to page
+            }, {
+                loader: 'css-loader', // translates CSS into CommonJS modules
+            }, {
+                loader: 'postcss-loader',
+                options: {
+                    plugins: function () { // postcss plugins, can be exported to postcss.config.js
+                        return [
+                            require('autoprefixer')
+                        ]
+                    }
+                }
+            }, {
+                loader: 'sass-loader' // compiles Sass to CSS
+            }]
+        }, ]
     },
     devServer: {
-      contentBase: distPath,
+        contentBase: distPath,
     },
 }
-

@@ -1,4 +1,6 @@
-import m from "mithril";
+import m from "mithril"
+
+import "./main.scss"
 
 function Hello() {
   return {
@@ -7,7 +9,7 @@ function Hello() {
         <h1>Hello world</h1>
       </main>
     )
-  };
+  }
 }
 
-m.render(document.body, <Hello />);
+m.render(document.body, <Hello />)
