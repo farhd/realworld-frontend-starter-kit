@@ -2,7 +2,7 @@ $enable-flex:               true;
 $enable-grid-classes:       true;
 
 // CONDUIT STYLES //
-$font-family-logo:       'Titillium Web', sans-serif;
+$font-family-logo: 'Titillium Web', sans-serif;
 .logo-font {
   font-family: $font-family-logo;
 }
@@ -33,26 +33,49 @@ $brand-danger:  #B85C5C;
 .nav-link:hover {
   transition: 0.1s all;
 }
-$navbar-padding-x: 0rem !important;
+$navbar-padding-x: 0rem;
 
 // create style for nav-link pills that do an outline instead of block
-.nav-pills.outline-active {
-  .nav-link {
-    border-radius:0px;
-    border:none;
-    border-bottom:2px solid transparent;
-    background:transparent;
-    color:#aaa;
-    &:hover {
-      color:#555;
-    }
-
-    &.active {
-      background: #fff !important;
-      border-bottom:2px solid $brand-primary !important;
-      color: $brand-primary !important;
-    }
+.nav-link {
+  border-radius:0px;
+  border:none;
+  border-bottom:2px solid transparent;
+  background:transparent;
+  color:#aaa;
+  &:hover {
+    color:#555;
   }
+
+  &.active {
+    background: #fff;
+    border-bottom:2px solid $brand-primary;
+    color: $brand-primary;
+  }
+}
+
+.label-default {
+  color: #fff;
+  background-color: #818a91;
+  font-size: .8rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  white-space: nowrap;
+  margin-right: 3px;
+  margin-bottom: .2rem;
+  display: inline-block;
+
+  &[href]:focus, 
+  &[href]:hover {
+    background-color: #687077;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.label-pill {
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 10rem;
 }
 
 footer {
